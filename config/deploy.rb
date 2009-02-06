@@ -1,6 +1,7 @@
 set :application, "elakeschool.com"
 set :user, "demo"
-set :repository,  "svn+elakeschoolssh://slashtom.com/home/demo/repository/elakeschool"
+set :repository,  "git@github.com:thomasengland/elakeschool.git"
+set :scm, "git"
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
@@ -9,8 +10,10 @@ set :repository,  "svn+elakeschoolssh://slashtom.com/home/demo/repository/elakes
 
 set :port, 30000        
 set :deploy_to, "/home/demo/#{application}"
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :use_sudo, false
+default_run_options[:pty] = true
+set :branch, "master"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
