@@ -19,7 +19,12 @@ set :branch, "master"
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 # set :scm, :subversion
+desc "Stop thin"
+task :reload_thin do
+  sudo "/etc/init.d/thin stop"
+end
 
+after "deploy", "reload_thin"
 role :app, application
 role :web, application
 role :db, application , :primary => true
