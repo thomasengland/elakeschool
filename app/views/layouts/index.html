@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<%= stylesheet_link_tag 'st_gargoyles' %>
+		<%= stylesheet_link_tag 'st_gargoyles_theme' %>
+		<%= javascript_include_tag 'ruthsarian_utilities'%>
+		<script type="text/javascript">
+		<!--
+			if ( ( typeof( NN_reloadPage ) ).toLowerCase() != 'undefined' ) { NN_reloadPage( true ); }
+			if ( ( typeof( opacity_init  ) ).toLowerCase() != 'undefined' ) { opacity_init(); }
+			if ( ( typeof( set_min_width ) ).toLowerCase() != 'undefined' ) { set_min_width( 'pageWrapper' , 600 , true ); }
+		//-->
+		</script>
+		<title>Enchanted Lake Elementary School</title>
+
+	</head>
+	<body>
+		<div id="pageWrapper"">
+			<div id="outerColumnContainer">
+				
+    <div id="innerColumnContainer"> 
+      <div id="middleColumn"> 
+        <div id="masthead" class="inside"> 
+          <h2>Enchanted Lake Elementary School</h2>
+          <hr class="hide">
+        </div>
+        <div id="content"> 
+          <!--
+	you must preserve the (lack of) whitespace when creating your own
+	horizontal navigation elements, otherwise the extra whitespace will
+	break the visual layout. although how it breaks (tiny spaces between each
+	element) is an effect that some may desire.
+-->
+          <div class="hnav bottomBorderOnly"> 
+            <ul class="nshnav"
+		>
+              <b>770 Keolu Dr.</b> Kailua, Hawaii 96734 | (808) <b>266.7800</b> 
+              | <a href="mailto:thomas_england@notes.k12.hi.us">webmaster</a> 
+            </ul>
+            <hr class="hide">
+          </div>
+          <h3 class="pageTitle"><%= @pagetitle %></h3>
+          <div id="contentColumnContainer"> 
+            <div id="innerContent"> 
+              <div class="inside">
+	 		<%= yield :layout %>
+              </div>
+              <hr class="hide">
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div id="leftColumn"> 
+        <div class="inside"> 
+          <div id="cornerLogo"> 
+            <div class="placeHolder"> 
+              <p><img src="images/logo.png"></p>
+            </div>
+          </div>
+          <div id="mainMenu" class="leftBlock"> 
+            <div class="vnav"> 
+              <ul
+			>
+                <li
+				><a href="<%= url_for(index_url) %>">Home</a
+			></li
+			>
+              </ul>
+            </div>
+          </div>
+          <div class="leftBlock"> 
+            <h3>Information</h3>
+            <div class="vnav"> 
+              <ul
+			>
+                <li
+				><a href="<%= url_for(pmessage_url) %>">Principal's Message</a
+			></li
+			>
+                <li><a href="<%= url_for(calendar_url) %>">Calendar of Events</a> </li>
+                <li><a href="<%= url_for(library_url) %>">Library</a></li>
+                <li
+				><a href="<%= url_for(scc_url) %>">S.C.C.</a
+			></li
+			>
+                <li
+				><a href="<%= url_for(pta_url) %>">P.T.A.</a
+			></li
+		>
+              </ul>
+            </div>
+          </div>
+          <div class="leftBlock"> 
+            <h3>Grade Levels</h3>
+            <div class="vnav"> 
+              <ul>
+                <li><a href="<%= url_for(curriculum_url) %>">Curriculum Structure</a></li>
+				<li><a href="<%= url_for(preschool_url) %>">Pre-School</a></li>
+                <li><a href="<%= url_for(kindergarten_url) %>">Kindergarten</a></li>
+                <li><a href="<%= url_for(grade1_url) %>">1st Grade</a></li>
+                <li><a href="<%= url_for(grade2_url) %>">2nd Grade</a></li>
+                <li><a href="<%= url_for(grade3_url) %>">3rd Grade</a></li>
+                <li><a href="<%= url_for(grade4_url) %>">4th Grade</a></li>
+                <li><a href="<%= url_for(grade5_url) %>">5th Grade</a></li>
+                <li><a href="<%= url_for(grade6_url) %>">6th Grade</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="leftBlock"> 
+            <h3>Data</h3>
+            <div class="vnav"> 
+              <ul
+			>
+                <li
+				><a href="http://power2.k12.hi.us/index.cfm?section=reports&siteID=159">AcFin</a
+			></li
+		>
+                <li><a href="http://arch.k12.hi.us/PDFs/nclb/2006/PrelimAYPallSch37Pub20060720.pdf">H.S.A. 
+                  Test Results</a></li>
+                <li><a href="http://arch.k12.hi.us/PDFs/trends/2005/Windward/Act51_School302.pdf">Trend 
+                  Reports</a></li>
+                <li><a href="<%= url_for(reports_url) %>">Other Reports</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="leftBlock"> 
+            <h3>About</h3>
+            <div class="vnav"> 
+              <ul
+			>
+                <li><a href="<%= url_for(schedule_url) %>">Bell Schedule</a></li>
+                <li><a href="<%= url_for(lunchmenu_url) %>">Lunch Menu</a></li>
+                <li><a href="<%= url_for(missionstatement_url) %>">Mission Statement</a></li>
+                <li
+				><a href="<%= url_for(staff_url) %>">Staff</a
+			></li
+			>
+              </ul>
+            </div>
+          </div>
+          <hr class="hide">
+        </div>
+      </div>
+      <div id="footer"> 
+        <p> &copy; Thomas England, Exumbra. All CSS/HTML is released into the public 
+          domain.<br>
+          Last Updated: <%= Time.now %> </p>
+        <hr class="hide">
+      </div>
+      <div class="clear"></div>
+    </div>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
