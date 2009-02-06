@@ -9,6 +9,7 @@ set :scm, "git"
 # set :deploy_to, "/var/www/#{application}"
 
 set :port, 30000        
+ssh_options[:forward_agent] = true
 set :deploy_to, "/home/demo/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
