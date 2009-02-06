@@ -21,7 +21,7 @@ set :branch, "master"
 # set :scm, :subversion
 desc "Restart thin"
 task :reload_thin do
-  "/etc/init.d/thin restart"
+  sudo "/etc/init.d/thin restart"
 end
 
 after "deploy", "reload_thin"
