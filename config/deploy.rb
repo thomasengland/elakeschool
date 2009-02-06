@@ -19,9 +19,9 @@ set :branch, "master"
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 # set :scm, :subversion
-desc "Stop thin"
+desc "Restart thin"
 task :reload_thin do
-  sudo "/etc/init.d/thin stop"
+  "/etc/init.d/thin restart"
 end
 
 after "deploy", "reload_thin"
