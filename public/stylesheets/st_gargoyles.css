@@ -134,7 +134,7 @@ body
 	margin: 0 10px 0 40px;	/* set side margins here 'cause IE doesn't like it set
 				   on the body element */
 	width: 1050px;
-	background-color: #ccc;
+	background-color: #CCCC33;
 	color: #000;
 }
 #outerColumnContainer
@@ -267,7 +267,7 @@ body
 	width: 200px;
 	height: 100%;
 	border: solid 1px #000;
-	background-color: #ddd;
+	background-color: #FFFF66;
 	color: #000;
 
 	/* IE/Mac is really anal about the right margins on this and the
