@@ -144,7 +144,7 @@ body
 	 * can use the border method to create a background color for both left
 	 * and right columns
 	 */
-	padding: 0 0 0 135px;
+	padding: 0 0 0 2px;
 }
 #innerColumnContainer
 {
@@ -155,7 +155,7 @@ body
 {
 	float: right;
 	margin: 0 0 0 -1px;
-	width: 400px;
+	width: 100%;
 	z-index: 1;
 }
 #masthead
