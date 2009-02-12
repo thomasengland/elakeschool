@@ -227,6 +227,17 @@ body
 	margin: 0 -1px 0 0;
 	width: 100%;
 }
+#rightColumn
+{
+	/*	R = #contentColumnContainer's right margin width
+	 *	N = width for #rightColumn
+	 *	------------------------------------------------
+	 *	N = R / ( ( 100 - R ) / 100 )
+	 */
+	float: right;
+	width: 42.85%;
+	margin: 0 -42.85% 0 1px;
+}
 #leftColumn
 {
 	float: left;
