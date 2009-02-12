@@ -133,7 +133,7 @@ body
 	border-width: 1px;
 	margin: 0 10px 0 40px;	/* set side margins here 'cause IE doesn't like it set
 				   on the body element */
-	width: 400px;
+	width: 800px;
 	background-color: #ccc;
 	color: #000;
 }
@@ -155,7 +155,7 @@ body
 {
 	float: right;
 	margin: 0 0 0 -1px;
-	width: 100%;
+	width: 400px;
 	z-index: 1;
 }
 #masthead
