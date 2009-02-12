@@ -438,3 +438,15 @@ ActionController::RoutingError (No route matches "/stylesheets/st_gargoyles.css"
     script/server:3
 
 Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StaticController#pmessage (for 127.0.0.1 at 2009-02-12 12:55:20) [GET]
+Rendering template within layouts/index
+Rendering static/pmessage
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://127.0.0.1/pmessage]
+
+
+Processing StaticController#pmessage (for 127.0.0.1 at 2009-02-12 12:55:21) [GET]
+Rendering template within layouts/index
+Rendering static/pmessage
+Completed in 94ms (View: 92, DB: 0) | 200 OK [http://127.0.0.1/pmessage]
