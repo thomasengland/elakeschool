@@ -133,7 +133,7 @@ body
 	border-width: 1px;
 	margin: 0 10px 0 40px;	/* set side margins here 'cause IE doesn't like it set
 				   on the body element */
-	width: 1051px;
+	width: 1052px;
 	background-color: #ccc;
 	color: #000;
 }
