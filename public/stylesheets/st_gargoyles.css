@@ -144,7 +144,7 @@ body
 	 * can use the border method to create a background color for both left
 	 * and right columns
 	 */
-	padding: 0 0 0 2px;
+	padding: 0 0 0 135px;
 }
 #innerColumnContainer
 {
@@ -226,17 +226,6 @@ body
 	float: left;
 	margin: 0 -1px 0 0;
 	width: 100%;
-}
-#rightColumn
-{
-	/*	R = #contentColumnContainer's right margin width
-	 *	N = width for #rightColumn
-	 *	------------------------------------------------
-	 *	N = R / ( ( 100 - R ) / 100 )
-	 */
-	float: right;
-	width: 42.85%;
-	margin: 0 -42.85% 0 1px;
 }
 #leftColumn
 {
