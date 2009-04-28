@@ -70,8 +70,7 @@ class StaticController < ApplicationController
   end
   
   def lunchmenu
-    @month = "November"
-    @pagetitle = "Lunch Menu for #{@month}"
+    @pagetitle = "Lunch Menus"
   end
   
   def missionstatement
