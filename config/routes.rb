@@ -26,6 +26,7 @@ ActionController::Routing::Routes.draw do |map|
   map.schedule '/schedule', :controller => 'static', :action => 'schedule'
   map.lunchmenu '/lunchmenu', :controller => 'static', :action => 'lunchmenu'
   map.staff '/staff',       :controller => 'static', :action => 'staff'
+  map.schoolbookmarks '/schoolbookmarks', :controller => 'static', :action => 'schoolbookmarks'
   map.missionstatement '/missionstatement', :controller => 'static', :action => 'missionstatement'
   map.reports '/reports', :controller => 'static', :action => 'reports'
   # Sample resource route (maps HTTP verbs to controller actions automatically):

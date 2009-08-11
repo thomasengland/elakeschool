@@ -25,6 +25,10 @@ class StaticController < ApplicationController
     @pagetitle = "School Community Council"
   end
   
+  def schoolbookmarks
+    @pagetitle = "School Bookmarks"
+  end
+  
   def pta
     @pagetitle = "Parent-Teacher Association"
   end
