@@ -57,6 +57,26 @@ class StaticController < ApplicationController
     @pagetitle = "3rd Grade"
   end
   
+  def grade3la
+    @pagetitle = "3rd Grade Language Arts"
+  end
+  
+  def grade3health
+    @pagetitle = "3rd Grade Health"
+  end
+  
+  def grade3math
+    @pagetitle = "3rd Grade Math"
+  end
+  
+  def grade3science
+    @pagetitle = "3rd Grade Science"
+  end
+  
+  def grade3ss
+    @pagetitle = "3rd Grade Social Studies"
+  end
+  
   def grade4
     @pagetitle = "4th Grade"
   end
